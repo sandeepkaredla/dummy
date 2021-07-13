@@ -41,7 +41,7 @@
 						<muleVersion>4.3.0</muleVersion>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>dummy-sandeep</applicationName>
+						<applicationName>dummy-ksandeep</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>

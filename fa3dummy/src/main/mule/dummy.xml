@@ -7,8 +7,11 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="02cc2532-457a-4aae-ba45-30c9eefa2d79" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<http:listener-config name="HTTP_Listener_config1" doc:name="HTTP Listener config" doc:id="c3362fa9-b124-4e36-8fd0-0a7a63e945bb" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
 	<flow name="fa3dummyFlow" doc:id="6adfe83f-5048-4cec-9912-67f119dad89b" >
-		<http:listener doc:name="Listener" doc:id="8bb25b95-1001-4774-9aae-bf6430c5c511" config-ref="HTTP_Listener_config" path="/dummy"/>
-		<set-payload value='#["hello world!"]' doc:name="Set Payload" doc:id="efb074a6-2c25-435a-a15c-ae17685f4dc7" />
+		<http:listener doc:name="Listener" doc:id="8bb25b95-1001-4774-9aae-bf6430c5c511" config-ref="HTTP_Listener_config1" path="/dummy"/>
+		<set-payload value='#["hello Dummy!"]' doc:name="Set Payload" doc:id="efb074a6-2c25-435a-a15c-ae17685f4dc7" />
 	</flow>
 </mule>
